@@ -87,10 +87,12 @@ img {
 }
 
 /* Шапка  */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-container {
   display: flex;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-list {
@@ -148,12 +150,12 @@ img {
 /* Герой */
 
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bg-color);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -177,8 +179,7 @@ img {
   font-size: 16px;
   line-height: 1.88;
   display: flex;
-  align-items: center;
-  text-align: center;
+  padding: 10px 32px;
   letter-spacing: 0.06em;
   color: var(--secondary-txt-color);
   background-color: var(--accent-txt-color);
@@ -193,11 +194,8 @@ img {
 
 /* Особнности  */
 
-.about-container {
-  padding-left: 215px;
-  padding-right: 215px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+.about {
+  padding: 94px 0;
 }
 
 .about-list {
@@ -231,6 +229,10 @@ img {
 
 /* Чем мы занимаемся */
 
+.work {
+  padding: 94px 0;
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -243,9 +245,6 @@ img {
 
 .work-list {
   display: flex;
-  padding-left: 215px;
-  padding-right: 215px;
-  padding-bottom: 94px;
 }
 
 .work-item {
@@ -257,16 +256,20 @@ img {
 
 /* Наша команда */
 
+.team {
+  padding: 94px 0;
+}
+
 .team-list {
   display: flex;
 }
 
 .team-item {
-  /* outline: 1px solid purple; */
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--secondary-txt-color);
 }
 
 .team-item :nth-child(4n) {
@@ -282,20 +285,13 @@ img {
 }
 
 .team-title {
-  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--basic-txt-color);
   text-align: center;
-  padding-top: 94px;
-}
-
-.team-list {
-  padding-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -320,9 +316,6 @@ img {
 .team-content {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
-  background-color: var(--secondary-txt-color);
 }
 
 /* Футер */
@@ -330,9 +323,6 @@ img {
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 215px;
 }
 
 .footer-list {
@@ -349,6 +339,7 @@ img {
 
 .footer {
   background-color: var(--bg-color);
+  padding: 94px 0;
 }
 
 .accent-white {
@@ -370,11 +361,13 @@ img {
 
 /* Портфолио */
 
+.project {
+  padding: 94px 0;
+}
+
 .portfolio-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
   margin-bottom: 50px;
 }
 
@@ -384,15 +377,13 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+  padding: 6px 22px;
   letter-spacing: 0.03em;
   color: #212121;
   cursor: pointer;
   font-family: inherit;
   border: none;
 }
-
-
 
 .button-list:hover,
 .button-list:focus {
@@ -411,6 +402,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--basic-txt-color);
+  margin-bottom: 4px;
 }
 
 .project-type {
@@ -421,8 +413,18 @@ img {
   color: var(--paragraph-txt-color);
 }
 
+.project-container {
+  padding: 20px 24px ;
+}
+
+/* .card-item {
+  border: 1px solid #EEEEEE;;
+} */
+
+
+
+
 /* .card-set {
-outline: 1px solid teal; 
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -430,24 +432,20 @@ outline: 1px solid teal;
 
 
 .card-item {
-outline: 1px solid blue;
 margin: 15px;
 flex-basis: calc (( 100% - 30px * 3 ) / 3) ;
 border: 1px solid #EEEEEE;
-}
- */
+} */
 
 
  .card-set {
-  /* outline: 1px solid teal; */
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.card-set > .card-item {
-  /* outline: 1px solid blue; */
+.card-item {
   flex-basis: calc (100% / 3 - 30px);
-
   margin-left: 30px;
-  margin-top: 30px;} 
+  margin-top: 30px;
+} 
