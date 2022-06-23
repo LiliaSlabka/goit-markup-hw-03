@@ -230,7 +230,7 @@ img {
 /* Чем мы занимаемся */
 
 .work {
-  padding: 94px 0;
+padding-bottom: 94px;
 }
 
 .work-title {
@@ -272,11 +272,7 @@ img {
   background-color: var(--secondary-txt-color);
 }
 
-.team-item :nth-child(4n) {
-  margin-right: 0;
-}
-
-.team-item :last-child {
+.team-item:last-child {
   margin-right: 0;
 }
 
@@ -339,7 +335,7 @@ img {
 
 .footer {
   background-color: var(--bg-color);
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .accent-white {
@@ -361,6 +357,14 @@ img {
 
 /* Портфолио */
 
+.portfolio-item {
+  margin-right: 8px;
+}
+
+.portfolio-item:last-child {
+  margin-right: 0;
+}
+
 .project {
   padding: 94px 0;
 }
@@ -373,7 +377,6 @@ img {
 
 .button-list {
   border-radius: 4px;
-  margin-left: 9px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -415,14 +418,21 @@ img {
 
 .project-container {
   padding: 20px 24px ;
-}
+ border: 1px solid #EEEEEE;
+border-top: 0;}
 
-/* .card-item {
-  border: 1px solid #EEEEEE;;
-} */
+ .card-set {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -30px;
+   margin-top: -30px;
+ }
 
-
-
+ .card-item {
+   flex-basis: calc(100% / 3 - 30px);
+   margin-left: 30px;
+   margin-top: 30px;
+ }
 
 /* .card-set {
   display: flex;
@@ -437,15 +447,3 @@ flex-basis: calc (( 100% - 30px * 3 ) / 3) ;
 border: 1px solid #EEEEEE;
 } */
 
-
- .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-.card-item {
-  flex-basis: calc (100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-} 
